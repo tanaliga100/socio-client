@@ -47,7 +47,7 @@ export type IPosts = {
 
 export interface IAuth {
   mode: string;
-  user: null;
+  user: null | { friends: Array<any> };
   token: null;
   posts: null | Array<any>;
   status: null | string;
